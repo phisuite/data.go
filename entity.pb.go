@@ -8,6 +8,7 @@ import (
 	fmt "fmt"
 	proto "github.com/golang/protobuf/proto"
 	any "github.com/golang/protobuf/ptypes/any"
+	_ "google.golang.org/genproto/googleapis/api/annotations"
 	grpc "google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"
 	status "google.golang.org/grpc/status"
@@ -106,26 +107,33 @@ func init() {
 }
 
 var fileDescriptor_cf50d946d740d100 = []byte{
-	// 304 bytes of a gzipped FileDescriptorProto
-	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x84, 0x8f, 0xdf, 0x4a, 0xc3, 0x30,
-	0x14, 0xc6, 0x49, 0x5b, 0x27, 0x3b, 0x9d, 0xa2, 0x07, 0x91, 0xba, 0xab, 0x52, 0x14, 0xc6, 0x2e,
-	0x32, 0xa9, 0x37, 0xe2, 0xdd, 0xa6, 0x43, 0x04, 0xc5, 0x52, 0xf0, 0x01, 0xb2, 0x36, 0xce, 0xe0,
-	0x9a, 0x94, 0x36, 0x1d, 0xf4, 0x75, 0x7c, 0x35, 0x5f, 0x44, 0x9a, 0x6c, 0x32, 0x11, 0xf4, 0x2e,
-	0xdf, 0x9f, 0x70, 0x7e, 0x1f, 0x0c, 0xb8, 0xd4, 0x42, 0xb7, 0xb4, 0xac, 0x94, 0x56, 0xe8, 0xe5,
-	0x4c, 0xb3, 0xe1, 0xd9, 0x52, 0xa9, 0xe5, 0x8a, 0x4f, 0x8c, 0xb7, 0x68, 0x5e, 0x27, 0x4c, 0x6e,
-	0x0a, 0xc3, 0x41, 0xa6, 0x8a, 0x42, 0x49, 0xab, 0xa2, 0x4f, 0x02, 0xbd, 0xb9, 0xf9, 0x8f, 0x87,
-	0xe0, 0x88, 0x3c, 0x20, 0x21, 0x19, 0xf5, 0x53, 0x47, 0xe4, 0x88, 0xe0, 0x49, 0x56, 0xf0, 0xc0,
-	0x31, 0x8e, 0x79, 0x63, 0x00, 0xfb, 0x6b, 0x5e, 0xd5, 0x42, 0xc9, 0xc0, 0x35, 0xf6, 0x56, 0x62,
-	0x08, 0xbe, 0xae, 0x98, 0xac, 0x59, 0xa6, 0xbb, 0xd4, 0x33, 0xe9, 0xae, 0x85, 0x63, 0x30, 0x6c,
-	0x01, 0x84, 0xee, 0xc8, 0x8f, 0x4f, 0x69, 0x27, 0xa8, 0xbd, 0x4d, 0xef, 0x98, 0x66, 0x73, 0xa9,
-	0xab, 0x36, 0xb5, 0xfc, 0x4f, 0xd0, 0xff, 0xb6, 0xf0, 0x08, 0xdc, 0x77, 0xde, 0x6e, 0xc8, 0xba,
-	0x27, 0x8e, 0x61, 0x6f, 0xcd, 0x56, 0x8d, 0x65, 0xf3, 0xe3, 0x13, 0x6a, 0xe7, 0xd2, 0xed, 0x5c,
-	0x3a, 0x95, 0x6d, 0x6a, 0x2b, 0x37, 0xce, 0x35, 0x89, 0x3f, 0x08, 0xf4, 0xed, 0xa5, 0x69, 0xf2,
-	0x80, 0x17, 0xe0, 0x3d, 0x8a, 0x5a, 0xe3, 0x81, 0x45, 0x78, 0x2e, 0x3b, 0xbc, 0x7a, 0x38, 0xd8,
-	0x25, 0xba, 0x24, 0x18, 0x81, 0x7b, 0xcf, 0xff, 0x6e, 0xe1, 0x39, 0xf4, 0x6e, 0x2b, 0xce, 0x34,
-	0xc7, 0x1f, 0xfe, 0xef, 0xd6, 0x4b, 0x99, 0xff, 0xd3, 0x9a, 0x45, 0x70, 0x9c, 0xa9, 0x82, 0x96,
-	0x6f, 0xa2, 0x6e, 0x84, 0xe6, 0x26, 0x9b, 0xf9, 0x36, 0x4c, 0xba, 0x61, 0x09, 0x59, 0xf4, 0xcc,
-	0xc2, 0xab, 0xaf, 0x00, 0x00, 0x00, 0xff, 0xff, 0xe5, 0x98, 0xdc, 0xaa, 0xf4, 0x01, 0x00, 0x00,
+	// 410 bytes of a gzipped FileDescriptorProto
+	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x84, 0x91, 0xc1, 0x6e, 0xd4, 0x30,
+	0x10, 0x86, 0xe5, 0xec, 0x12, 0xd4, 0xc9, 0xb6, 0xa2, 0xa3, 0x6a, 0x49, 0x43, 0x25, 0x96, 0x9c,
+	0xaa, 0x1c, 0x9c, 0x2a, 0x5c, 0xd0, 0xde, 0x76, 0x4b, 0x55, 0x21, 0x81, 0x58, 0x45, 0x42, 0x9c,
+	0xdd, 0xc4, 0x14, 0x8b, 0xc6, 0x8e, 0x12, 0x67, 0xa5, 0x08, 0x71, 0xe1, 0x15, 0x38, 0x70, 0xe2,
+	0xa9, 0x78, 0x04, 0x78, 0x10, 0x94, 0xf1, 0x16, 0x05, 0x7a, 0xe8, 0xcd, 0xf3, 0x7b, 0xfe, 0xcf,
+	0xff, 0x8c, 0x61, 0x26, 0xb5, 0x55, 0xb6, 0xe7, 0x75, 0x63, 0xac, 0xc1, 0x69, 0x29, 0xac, 0x88,
+	0x4e, 0xae, 0x8d, 0xb9, 0xbe, 0x91, 0xa9, 0xa8, 0x55, 0x2a, 0xb4, 0x36, 0x56, 0x58, 0x65, 0x74,
+	0xeb, 0x7a, 0xa2, 0xe3, 0xdd, 0x2d, 0x55, 0x57, 0xdd, 0x87, 0x54, 0xe8, 0x9d, 0x3d, 0x9a, 0x15,
+	0xa6, 0xaa, 0x8c, 0x76, 0x55, 0xfc, 0x8b, 0x81, 0x7f, 0x41, 0x74, 0x3c, 0x00, 0x4f, 0x95, 0x21,
+	0x5b, 0xb0, 0xd3, 0xbd, 0xdc, 0x53, 0x25, 0x22, 0x4c, 0xb5, 0xa8, 0x64, 0xe8, 0x91, 0x42, 0x67,
+	0x0c, 0xe1, 0xe1, 0x56, 0x36, 0xad, 0x32, 0x3a, 0x9c, 0x90, 0x7c, 0x5b, 0xe2, 0x02, 0x02, 0xdb,
+	0x08, 0xdd, 0x8a, 0x62, 0xc8, 0x11, 0x4e, 0xe9, 0x76, 0x2c, 0x61, 0x02, 0x94, 0x3c, 0x84, 0xc5,
+	0xe4, 0x34, 0xc8, 0xe6, 0x7c, 0x28, 0xb8, 0x7b, 0x9b, 0xbf, 0x14, 0x56, 0x5c, 0x68, 0xdb, 0xf4,
+	0xb9, 0x9b, 0xee, 0x0d, 0xec, 0xfd, 0x95, 0xf0, 0x11, 0x4c, 0x3e, 0xc9, 0x7e, 0x97, 0x6c, 0x38,
+	0x62, 0x02, 0x0f, 0xb6, 0xe2, 0xa6, 0x73, 0xd9, 0x82, 0xec, 0x88, 0xbb, 0x71, 0xf9, 0xed, 0xb8,
+	0x7c, 0xa5, 0xfb, 0xdc, 0xb5, 0x2c, 0xbd, 0x17, 0x2c, 0xfb, 0xce, 0x60, 0xdf, 0xbd, 0x94, 0x4b,
+	0x51, 0xae, 0x36, 0xaf, 0x70, 0x05, 0xd3, 0xd7, 0xaa, 0xb5, 0xb8, 0xef, 0x62, 0xbc, 0xad, 0x69,
+	0x7b, 0xd1, 0x6c, 0x9c, 0x2a, 0x8e, 0xbe, 0xfe, 0xfc, 0xfd, 0xcd, 0x3b, 0x42, 0x4c, 0xdd, 0x07,
+	0xa4, 0xdb, 0xb3, 0x54, 0xe9, 0xb6, 0x96, 0x85, 0x3d, 0x63, 0x78, 0x0e, 0x93, 0x4b, 0x79, 0x0f,
+	0xe1, 0x29, 0x11, 0x8e, 0xf1, 0xf1, 0x5d, 0x42, 0xfa, 0x59, 0x95, 0x5f, 0xb2, 0x1f, 0x0c, 0x0e,
+	0x5c, 0xef, 0xfb, 0x46, 0x59, 0x39, 0x44, 0x5b, 0x83, 0x7f, 0xde, 0x48, 0x61, 0x25, 0xfe, 0xc3,
+	0xfa, 0x8f, 0x7c, 0x42, 0xe4, 0x79, 0x7c, 0x38, 0x22, 0x17, 0x64, 0x5b, 0xb2, 0x04, 0x2f, 0xc1,
+	0x7f, 0x57, 0x97, 0xf7, 0x31, 0x9e, 0x11, 0xe3, 0x49, 0x34, 0x1f, 0x31, 0x3a, 0xb2, 0x51, 0xb8,
+	0x25, 0x4b, 0xd6, 0x31, 0x1c, 0x16, 0xa6, 0xe2, 0xf5, 0x47, 0xd5, 0x76, 0xca, 0x4a, 0xb2, 0xaf,
+	0x03, 0xe7, 0xdf, 0x0c, 0xdb, 0xde, 0xb0, 0x2b, 0x9f, 0xd6, 0xfe, 0xfc, 0x4f, 0x00, 0x00, 0x00,
+	0xff, 0xff, 0x07, 0x51, 0xb9, 0x10, 0xa7, 0x02, 0x00, 0x00,
 }
 
 // Reference imports to suppress errors if they are not otherwise used.
@@ -136,30 +144,28 @@ var _ grpc.ClientConnInterface
 // is compatible with the grpc package it is being compiled against.
 const _ = grpc.SupportPackageIsVersion6
 
-// EntityAPIClient is the client API for EntityAPI service.
+// EntityReadAPIClient is the client API for EntityReadAPI service.
 //
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/google.golang.org/grpc#ClientConn.NewStream.
-type EntityAPIClient interface {
-	List(ctx context.Context, in *Options, opts ...grpc.CallOption) (EntityAPI_ListClient, error)
+type EntityReadAPIClient interface {
+	List(ctx context.Context, in *Options, opts ...grpc.CallOption) (EntityReadAPI_ListClient, error)
 	Get(ctx context.Context, in *Options, opts ...grpc.CallOption) (*Entity, error)
-	Create(ctx context.Context, in *Entity, opts ...grpc.CallOption) (*Entity, error)
-	Update(ctx context.Context, in *Entity, opts ...grpc.CallOption) (*Entity, error)
 }
 
-type entityAPIClient struct {
+type entityReadAPIClient struct {
 	cc grpc.ClientConnInterface
 }
 
-func NewEntityAPIClient(cc grpc.ClientConnInterface) EntityAPIClient {
-	return &entityAPIClient{cc}
+func NewEntityReadAPIClient(cc grpc.ClientConnInterface) EntityReadAPIClient {
+	return &entityReadAPIClient{cc}
 }
 
-func (c *entityAPIClient) List(ctx context.Context, in *Options, opts ...grpc.CallOption) (EntityAPI_ListClient, error) {
-	stream, err := c.cc.NewStream(ctx, &_EntityAPI_serviceDesc.Streams[0], "/data.EntityAPI/List", opts...)
+func (c *entityReadAPIClient) List(ctx context.Context, in *Options, opts ...grpc.CallOption) (EntityReadAPI_ListClient, error) {
+	stream, err := c.cc.NewStream(ctx, &_EntityReadAPI_serviceDesc.Streams[0], "/data.EntityReadAPI/List", opts...)
 	if err != nil {
 		return nil, err
 	}
-	x := &entityAPIListClient{stream}
+	x := &entityReadAPIListClient{stream}
 	if err := x.ClientStream.SendMsg(in); err != nil {
 		return nil, err
 	}
@@ -169,16 +175,16 @@ func (c *entityAPIClient) List(ctx context.Context, in *Options, opts ...grpc.Ca
 	return x, nil
 }
 
-type EntityAPI_ListClient interface {
+type EntityReadAPI_ListClient interface {
 	Recv() (*Entity, error)
 	grpc.ClientStream
 }
 
-type entityAPIListClient struct {
+type entityReadAPIListClient struct {
 	grpc.ClientStream
 }
 
-func (x *entityAPIListClient) Recv() (*Entity, error) {
+func (x *entityReadAPIListClient) Recv() (*Entity, error) {
 	m := new(Entity)
 	if err := x.ClientStream.RecvMsg(m); err != nil {
 		return nil, err
@@ -186,160 +192,198 @@ func (x *entityAPIListClient) Recv() (*Entity, error) {
 	return m, nil
 }
 
-func (c *entityAPIClient) Get(ctx context.Context, in *Options, opts ...grpc.CallOption) (*Entity, error) {
+func (c *entityReadAPIClient) Get(ctx context.Context, in *Options, opts ...grpc.CallOption) (*Entity, error) {
 	out := new(Entity)
-	err := c.cc.Invoke(ctx, "/data.EntityAPI/Get", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/data.EntityReadAPI/Get", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
 	return out, nil
 }
 
-func (c *entityAPIClient) Create(ctx context.Context, in *Entity, opts ...grpc.CallOption) (*Entity, error) {
-	out := new(Entity)
-	err := c.cc.Invoke(ctx, "/data.EntityAPI/Create", in, out, opts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
-}
-
-func (c *entityAPIClient) Update(ctx context.Context, in *Entity, opts ...grpc.CallOption) (*Entity, error) {
-	out := new(Entity)
-	err := c.cc.Invoke(ctx, "/data.EntityAPI/Update", in, out, opts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
-}
-
-// EntityAPIServer is the server API for EntityAPI service.
-type EntityAPIServer interface {
-	List(*Options, EntityAPI_ListServer) error
+// EntityReadAPIServer is the server API for EntityReadAPI service.
+type EntityReadAPIServer interface {
+	List(*Options, EntityReadAPI_ListServer) error
 	Get(context.Context, *Options) (*Entity, error)
-	Create(context.Context, *Entity) (*Entity, error)
-	Update(context.Context, *Entity) (*Entity, error)
 }
 
-// UnimplementedEntityAPIServer can be embedded to have forward compatible implementations.
-type UnimplementedEntityAPIServer struct {
+// UnimplementedEntityReadAPIServer can be embedded to have forward compatible implementations.
+type UnimplementedEntityReadAPIServer struct {
 }
 
-func (*UnimplementedEntityAPIServer) List(req *Options, srv EntityAPI_ListServer) error {
+func (*UnimplementedEntityReadAPIServer) List(req *Options, srv EntityReadAPI_ListServer) error {
 	return status.Errorf(codes.Unimplemented, "method List not implemented")
 }
-func (*UnimplementedEntityAPIServer) Get(ctx context.Context, req *Options) (*Entity, error) {
+func (*UnimplementedEntityReadAPIServer) Get(ctx context.Context, req *Options) (*Entity, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method Get not implemented")
 }
-func (*UnimplementedEntityAPIServer) Create(ctx context.Context, req *Entity) (*Entity, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method Create not implemented")
-}
-func (*UnimplementedEntityAPIServer) Update(ctx context.Context, req *Entity) (*Entity, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method Update not implemented")
+
+func RegisterEntityReadAPIServer(s *grpc.Server, srv EntityReadAPIServer) {
+	s.RegisterService(&_EntityReadAPI_serviceDesc, srv)
 }
 
-func RegisterEntityAPIServer(s *grpc.Server, srv EntityAPIServer) {
-	s.RegisterService(&_EntityAPI_serviceDesc, srv)
-}
-
-func _EntityAPI_List_Handler(srv interface{}, stream grpc.ServerStream) error {
+func _EntityReadAPI_List_Handler(srv interface{}, stream grpc.ServerStream) error {
 	m := new(Options)
 	if err := stream.RecvMsg(m); err != nil {
 		return err
 	}
-	return srv.(EntityAPIServer).List(m, &entityAPIListServer{stream})
+	return srv.(EntityReadAPIServer).List(m, &entityReadAPIListServer{stream})
 }
 
-type EntityAPI_ListServer interface {
+type EntityReadAPI_ListServer interface {
 	Send(*Entity) error
 	grpc.ServerStream
 }
 
-type entityAPIListServer struct {
+type entityReadAPIListServer struct {
 	grpc.ServerStream
 }
 
-func (x *entityAPIListServer) Send(m *Entity) error {
+func (x *entityReadAPIListServer) Send(m *Entity) error {
 	return x.ServerStream.SendMsg(m)
 }
 
-func _EntityAPI_Get_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+func _EntityReadAPI_Get_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
 	in := new(Options)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
 	if interceptor == nil {
-		return srv.(EntityAPIServer).Get(ctx, in)
+		return srv.(EntityReadAPIServer).Get(ctx, in)
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/data.EntityAPI/Get",
+		FullMethod: "/data.EntityReadAPI/Get",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(EntityAPIServer).Get(ctx, req.(*Options))
+		return srv.(EntityReadAPIServer).Get(ctx, req.(*Options))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
-func _EntityAPI_Create_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(Entity)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(EntityAPIServer).Create(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: "/data.EntityAPI/Create",
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(EntityAPIServer).Create(ctx, req.(*Entity))
-	}
-	return interceptor(ctx, in, info, handler)
-}
-
-func _EntityAPI_Update_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(Entity)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(EntityAPIServer).Update(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: "/data.EntityAPI/Update",
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(EntityAPIServer).Update(ctx, req.(*Entity))
-	}
-	return interceptor(ctx, in, info, handler)
-}
-
-var _EntityAPI_serviceDesc = grpc.ServiceDesc{
-	ServiceName: "data.EntityAPI",
-	HandlerType: (*EntityAPIServer)(nil),
+var _EntityReadAPI_serviceDesc = grpc.ServiceDesc{
+	ServiceName: "data.EntityReadAPI",
+	HandlerType: (*EntityReadAPIServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
 			MethodName: "Get",
-			Handler:    _EntityAPI_Get_Handler,
-		},
-		{
-			MethodName: "Create",
-			Handler:    _EntityAPI_Create_Handler,
-		},
-		{
-			MethodName: "Update",
-			Handler:    _EntityAPI_Update_Handler,
+			Handler:    _EntityReadAPI_Get_Handler,
 		},
 	},
 	Streams: []grpc.StreamDesc{
 		{
 			StreamName:    "List",
-			Handler:       _EntityAPI_List_Handler,
+			Handler:       _EntityReadAPI_List_Handler,
 			ServerStreams: true,
 		},
 	},
+	Metadata: "entity.proto",
+}
+
+// EntityWriteAPIClient is the client API for EntityWriteAPI service.
+//
+// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/google.golang.org/grpc#ClientConn.NewStream.
+type EntityWriteAPIClient interface {
+	Create(ctx context.Context, in *Entity, opts ...grpc.CallOption) (*Entity, error)
+	Update(ctx context.Context, in *Entity, opts ...grpc.CallOption) (*Entity, error)
+}
+
+type entityWriteAPIClient struct {
+	cc grpc.ClientConnInterface
+}
+
+func NewEntityWriteAPIClient(cc grpc.ClientConnInterface) EntityWriteAPIClient {
+	return &entityWriteAPIClient{cc}
+}
+
+func (c *entityWriteAPIClient) Create(ctx context.Context, in *Entity, opts ...grpc.CallOption) (*Entity, error) {
+	out := new(Entity)
+	err := c.cc.Invoke(ctx, "/data.EntityWriteAPI/Create", in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *entityWriteAPIClient) Update(ctx context.Context, in *Entity, opts ...grpc.CallOption) (*Entity, error) {
+	out := new(Entity)
+	err := c.cc.Invoke(ctx, "/data.EntityWriteAPI/Update", in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+// EntityWriteAPIServer is the server API for EntityWriteAPI service.
+type EntityWriteAPIServer interface {
+	Create(context.Context, *Entity) (*Entity, error)
+	Update(context.Context, *Entity) (*Entity, error)
+}
+
+// UnimplementedEntityWriteAPIServer can be embedded to have forward compatible implementations.
+type UnimplementedEntityWriteAPIServer struct {
+}
+
+func (*UnimplementedEntityWriteAPIServer) Create(ctx context.Context, req *Entity) (*Entity, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method Create not implemented")
+}
+func (*UnimplementedEntityWriteAPIServer) Update(ctx context.Context, req *Entity) (*Entity, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method Update not implemented")
+}
+
+func RegisterEntityWriteAPIServer(s *grpc.Server, srv EntityWriteAPIServer) {
+	s.RegisterService(&_EntityWriteAPI_serviceDesc, srv)
+}
+
+func _EntityWriteAPI_Create_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(Entity)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(EntityWriteAPIServer).Create(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: "/data.EntityWriteAPI/Create",
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(EntityWriteAPIServer).Create(ctx, req.(*Entity))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _EntityWriteAPI_Update_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(Entity)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(EntityWriteAPIServer).Update(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: "/data.EntityWriteAPI/Update",
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(EntityWriteAPIServer).Update(ctx, req.(*Entity))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+var _EntityWriteAPI_serviceDesc = grpc.ServiceDesc{
+	ServiceName: "data.EntityWriteAPI",
+	HandlerType: (*EntityWriteAPIServer)(nil),
+	Methods: []grpc.MethodDesc{
+		{
+			MethodName: "Create",
+			Handler:    _EntityWriteAPI_Create_Handler,
+		},
+		{
+			MethodName: "Update",
+			Handler:    _EntityWriteAPI_Update_Handler,
+		},
+	},
+	Streams:  []grpc.StreamDesc{},
 	Metadata: "entity.proto",
 }
