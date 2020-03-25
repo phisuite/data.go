@@ -8,6 +8,7 @@ import (
 	fmt "fmt"
 	proto "github.com/golang/protobuf/proto"
 	any "github.com/golang/protobuf/ptypes/any"
+	_ "google.golang.org/genproto/googleapis/api/annotations"
 	grpc "google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"
 	status "google.golang.org/grpc/status"
@@ -106,26 +107,33 @@ func init() {
 }
 
 var fileDescriptor_2d17a9d3f0ddf27e = []byte{
-	// 302 bytes of a gzipped FileDescriptorProto
-	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x7c, 0x8f, 0xcd, 0x4e, 0xeb, 0x30,
-	0x10, 0x85, 0x95, 0x9f, 0xde, 0x5e, 0x26, 0x05, 0xc1, 0x88, 0x45, 0xc8, 0xaa, 0x05, 0x16, 0x15,
-	0x0b, 0x17, 0x85, 0x0d, 0x62, 0xd7, 0x4a, 0x15, 0x42, 0x42, 0xc2, 0xea, 0x1b, 0xb8, 0x8d, 0x69,
-	0x2d, 0x12, 0x3b, 0x8a, 0x9d, 0x8a, 0x3c, 0x34, 0xef, 0x80, 0x6c, 0x13, 0x29, 0x6c, 0xd8, 0x79,
-	0xce, 0x77, 0xac, 0xf9, 0x06, 0x12, 0x7e, 0xe4, 0xd2, 0x90, 0xba, 0x51, 0x46, 0x61, 0x5c, 0x30,
-	0xc3, 0xb2, 0xab, 0xbd, 0x52, 0xfb, 0x92, 0x2f, 0x5c, 0xb6, 0x6d, 0xdf, 0x17, 0x4c, 0x76, 0xbe,
-	0x90, 0x4d, 0x76, 0xaa, 0xaa, 0x94, 0xf4, 0xd3, 0xf5, 0x57, 0x00, 0xa3, 0xb5, 0xfd, 0x8e, 0x67,
-	0x10, 0x8a, 0x22, 0x0d, 0xa6, 0xc1, 0xfc, 0x64, 0x13, 0x8a, 0x02, 0x11, 0x62, 0xc9, 0x2a, 0x9e,
-	0x86, 0x2e, 0x71, 0x6f, 0x4c, 0x61, 0x7c, 0xe4, 0x8d, 0x16, 0x4a, 0xa6, 0x91, 0x8b, 0xfb, 0x11,
-	0xa7, 0x90, 0x98, 0x86, 0x49, 0xcd, 0x76, 0xc6, 0xd2, 0xd8, 0xd1, 0x61, 0x84, 0x39, 0x8c, 0x6b,
-	0xd6, 0x95, 0x8a, 0x15, 0x29, 0x4c, 0xa3, 0x79, 0x92, 0xa7, 0xc4, 0xaa, 0x12, 0xb7, 0x9d, 0x50,
-	0x8f, 0xd6, 0xd2, 0x34, 0xdd, 0xa6, 0x2f, 0x66, 0x14, 0x26, 0x43, 0x80, 0xe7, 0x10, 0x7d, 0xf0,
-	0xee, 0x47, 0xd2, 0x3e, 0xf1, 0x0e, 0x46, 0x47, 0x56, 0xb6, 0x5e, 0x33, 0xc9, 0x2f, 0x89, 0x3f,
-	0x9c, 0xf4, 0x87, 0x93, 0xa5, 0xec, 0x36, 0xbe, 0xf2, 0x14, 0x3e, 0x06, 0xf9, 0x27, 0xfc, 0x77,
-	0x0b, 0x97, 0xf4, 0x05, 0x6f, 0x60, 0x4c, 0xdb, 0x6d, 0x29, 0xf4, 0x01, 0x93, 0x81, 0x4b, 0x36,
-	0x1c, 0xf0, 0x16, 0xe2, 0x57, 0xa1, 0x0d, 0x9e, 0xfa, 0xf0, 0xad, 0xb6, 0xc7, 0xe8, 0x5f, 0x9d,
-	0xfb, 0x00, 0x67, 0x10, 0x3d, 0xf3, 0x3f, 0x4b, 0xab, 0x19, 0x5c, 0xec, 0x54, 0x45, 0xea, 0x83,
-	0xd0, 0xad, 0x30, 0xdc, 0xa1, 0x15, 0x38, 0x46, 0xad, 0x2c, 0x0d, 0xb6, 0xff, 0x9c, 0xf5, 0xc3,
-	0x77, 0x00, 0x00, 0x00, 0xff, 0xff, 0x71, 0x30, 0x39, 0x6c, 0xd1, 0x01, 0x00, 0x00,
+	// 413 bytes of a gzipped FileDescriptorProto
+	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x7c, 0x51, 0xcf, 0x8a, 0xd4, 0x30,
+	0x18, 0x27, 0x9d, 0xd9, 0x1d, 0xfd, 0x3a, 0x2b, 0xbb, 0x51, 0x97, 0x6c, 0x5d, 0x64, 0xec, 0x69,
+	0x99, 0x43, 0xba, 0xd4, 0x8b, 0xcc, 0x45, 0xba, 0xb0, 0x88, 0xa0, 0x58, 0x7a, 0xf1, 0x9c, 0x69,
+	0xe3, 0x6e, 0xb0, 0x4d, 0x4a, 0x9b, 0x16, 0x8a, 0x78, 0xf1, 0x11, 0xf4, 0xd1, 0x7c, 0x05, 0xaf,
+	0xbe, 0x83, 0xf4, 0xcb, 0x0c, 0x56, 0x84, 0xb9, 0xe5, 0xfb, 0x7e, 0x7f, 0xf2, 0xfb, 0x25, 0xe0,
+	0xcb, 0x5e, 0x6a, 0xcb, 0xeb, 0xc6, 0x58, 0x43, 0xe7, 0x85, 0xb0, 0x22, 0xb8, 0xbc, 0x33, 0xe6,
+	0xae, 0x94, 0x91, 0xa8, 0x55, 0x24, 0xb4, 0x36, 0x56, 0x58, 0x65, 0x74, 0xeb, 0x38, 0xc1, 0xc5,
+	0x0e, 0xc5, 0x69, 0xdb, 0x7d, 0x8a, 0x84, 0x1e, 0x76, 0xd0, 0x32, 0x37, 0x55, 0x65, 0xb4, 0x9b,
+	0xc2, 0xdf, 0x04, 0x8e, 0x6e, 0x47, 0x73, 0xfa, 0x08, 0x3c, 0x55, 0x30, 0xb2, 0x22, 0x57, 0x0f,
+	0x33, 0x4f, 0x15, 0x94, 0xc2, 0x5c, 0x8b, 0x4a, 0x32, 0x0f, 0x37, 0x78, 0xa6, 0x0c, 0x16, 0xbd,
+	0x6c, 0x5a, 0x65, 0x34, 0x9b, 0xe1, 0x7a, 0x3f, 0xd2, 0x15, 0xf8, 0xb6, 0x11, 0xba, 0x15, 0xf9,
+	0x18, 0x83, 0xcd, 0x11, 0x9d, 0xae, 0x68, 0x0c, 0x8b, 0x5a, 0x0c, 0xa5, 0x11, 0x05, 0x83, 0xd5,
+	0xec, 0xca, 0x8f, 0x19, 0x1f, 0x8b, 0x70, 0xbc, 0x9d, 0xa7, 0x0e, 0xba, 0xd5, 0xb6, 0x19, 0xb2,
+	0x3d, 0x31, 0x48, 0x61, 0x39, 0x05, 0xe8, 0x29, 0xcc, 0x3e, 0xcb, 0x61, 0x17, 0x72, 0x3c, 0xd2,
+	0x35, 0x1c, 0xf5, 0xa2, 0xec, 0x5c, 0x4c, 0x3f, 0x7e, 0xc2, 0x5d, 0x71, 0xbe, 0x2f, 0xce, 0x13,
+	0x3d, 0x64, 0x8e, 0xb2, 0xf1, 0x5e, 0x91, 0xf8, 0x3d, 0x3c, 0xc0, 0x0b, 0x93, 0xf4, 0x2d, 0x4d,
+	0x60, 0x91, 0x76, 0xdb, 0x52, 0xb5, 0xf7, 0xd4, 0x9f, 0x64, 0x09, 0xa6, 0x43, 0x78, 0xf9, 0xed,
+	0xe7, 0xaf, 0x1f, 0xde, 0x79, 0x78, 0x16, 0xe1, 0x1f, 0x44, 0xfd, 0x75, 0x54, 0x3b, 0xd1, 0x86,
+	0xac, 0xe3, 0xef, 0x04, 0x96, 0xc8, 0xcb, 0xa4, 0x28, 0x46, 0xcf, 0xd7, 0x30, 0x7f, 0xa7, 0x5a,
+	0x4b, 0x4f, 0x9c, 0xc7, 0x87, 0x1a, 0x7f, 0xe5, 0x5f, 0xcb, 0x0b, 0xb4, 0x7c, 0x4c, 0x27, 0x96,
+	0x4a, 0xb7, 0xb5, 0xcc, 0xed, 0x35, 0xa1, 0x09, 0xcc, 0xde, 0xc8, 0xc3, 0xfa, 0xe7, 0xa8, 0x67,
+	0xf4, 0xfc, 0x3f, 0x7d, 0xf4, 0x45, 0x15, 0x5f, 0xe3, 0x14, 0x4e, 0x90, 0xf8, 0xb1, 0x51, 0x56,
+	0xba, 0x50, 0xc7, 0x99, 0xcc, 0x4d, 0x53, 0x1c, 0xe8, 0xf9, 0x0c, 0x4d, 0x9f, 0x86, 0xa7, 0x7f,
+	0x4d, 0x1b, 0xd4, 0x6c, 0xc8, 0xfa, 0xe6, 0x05, 0x9c, 0xe5, 0xa6, 0xe2, 0xf5, 0xbd, 0x6a, 0x3b,
+	0x65, 0x25, 0xea, 0x6e, 0x00, 0x85, 0xe9, 0xf8, 0xd0, 0x29, 0xd9, 0x1e, 0xe3, 0x8b, 0xbf, 0xfc,
+	0x13, 0x00, 0x00, 0xff, 0xff, 0xd4, 0x75, 0xb2, 0x34, 0xab, 0x02, 0x00, 0x00,
 }
 
 // Reference imports to suppress errors if they are not otherwise used.
@@ -141,8 +149,6 @@ const _ = grpc.SupportPackageIsVersion6
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/google.golang.org/grpc#ClientConn.NewStream.
 type EventAPIClient interface {
 	Publish(ctx context.Context, in *Event, opts ...grpc.CallOption) (*Event, error)
-	List(ctx context.Context, in *Options, opts ...grpc.CallOption) (EventAPI_ListClient, error)
-	Get(ctx context.Context, in *Options, opts ...grpc.CallOption) (*Event, error)
 }
 
 type eventAPIClient struct {
@@ -162,52 +168,9 @@ func (c *eventAPIClient) Publish(ctx context.Context, in *Event, opts ...grpc.Ca
 	return out, nil
 }
 
-func (c *eventAPIClient) List(ctx context.Context, in *Options, opts ...grpc.CallOption) (EventAPI_ListClient, error) {
-	stream, err := c.cc.NewStream(ctx, &_EventAPI_serviceDesc.Streams[0], "/data.EventAPI/List", opts...)
-	if err != nil {
-		return nil, err
-	}
-	x := &eventAPIListClient{stream}
-	if err := x.ClientStream.SendMsg(in); err != nil {
-		return nil, err
-	}
-	if err := x.ClientStream.CloseSend(); err != nil {
-		return nil, err
-	}
-	return x, nil
-}
-
-type EventAPI_ListClient interface {
-	Recv() (*Event, error)
-	grpc.ClientStream
-}
-
-type eventAPIListClient struct {
-	grpc.ClientStream
-}
-
-func (x *eventAPIListClient) Recv() (*Event, error) {
-	m := new(Event)
-	if err := x.ClientStream.RecvMsg(m); err != nil {
-		return nil, err
-	}
-	return m, nil
-}
-
-func (c *eventAPIClient) Get(ctx context.Context, in *Options, opts ...grpc.CallOption) (*Event, error) {
-	out := new(Event)
-	err := c.cc.Invoke(ctx, "/data.EventAPI/Get", in, out, opts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
-}
-
 // EventAPIServer is the server API for EventAPI service.
 type EventAPIServer interface {
 	Publish(context.Context, *Event) (*Event, error)
-	List(*Options, EventAPI_ListServer) error
-	Get(context.Context, *Options) (*Event, error)
 }
 
 // UnimplementedEventAPIServer can be embedded to have forward compatible implementations.
@@ -216,12 +179,6 @@ type UnimplementedEventAPIServer struct {
 
 func (*UnimplementedEventAPIServer) Publish(ctx context.Context, req *Event) (*Event, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method Publish not implemented")
-}
-func (*UnimplementedEventAPIServer) List(req *Options, srv EventAPI_ListServer) error {
-	return status.Errorf(codes.Unimplemented, "method List not implemented")
-}
-func (*UnimplementedEventAPIServer) Get(ctx context.Context, req *Options) (*Event, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method Get not implemented")
 }
 
 func RegisterEventAPIServer(s *grpc.Server, srv EventAPIServer) {
@@ -246,45 +203,6 @@ func _EventAPI_Publish_Handler(srv interface{}, ctx context.Context, dec func(in
 	return interceptor(ctx, in, info, handler)
 }
 
-func _EventAPI_List_Handler(srv interface{}, stream grpc.ServerStream) error {
-	m := new(Options)
-	if err := stream.RecvMsg(m); err != nil {
-		return err
-	}
-	return srv.(EventAPIServer).List(m, &eventAPIListServer{stream})
-}
-
-type EventAPI_ListServer interface {
-	Send(*Event) error
-	grpc.ServerStream
-}
-
-type eventAPIListServer struct {
-	grpc.ServerStream
-}
-
-func (x *eventAPIListServer) Send(m *Event) error {
-	return x.ServerStream.SendMsg(m)
-}
-
-func _EventAPI_Get_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(Options)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(EventAPIServer).Get(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: "/data.EventAPI/Get",
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(EventAPIServer).Get(ctx, req.(*Options))
-	}
-	return interceptor(ctx, in, info, handler)
-}
-
 var _EventAPI_serviceDesc = grpc.ServiceDesc{
 	ServiceName: "data.EventAPI",
 	HandlerType: (*EventAPIServer)(nil),
@@ -293,17 +211,215 @@ var _EventAPI_serviceDesc = grpc.ServiceDesc{
 			MethodName: "Publish",
 			Handler:    _EventAPI_Publish_Handler,
 		},
+	},
+	Streams:  []grpc.StreamDesc{},
+	Metadata: "event.proto",
+}
+
+// EventReadAPIClient is the client API for EventReadAPI service.
+//
+// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/google.golang.org/grpc#ClientConn.NewStream.
+type EventReadAPIClient interface {
+	List(ctx context.Context, in *Options, opts ...grpc.CallOption) (EventReadAPI_ListClient, error)
+	Get(ctx context.Context, in *Options, opts ...grpc.CallOption) (*Event, error)
+}
+
+type eventReadAPIClient struct {
+	cc grpc.ClientConnInterface
+}
+
+func NewEventReadAPIClient(cc grpc.ClientConnInterface) EventReadAPIClient {
+	return &eventReadAPIClient{cc}
+}
+
+func (c *eventReadAPIClient) List(ctx context.Context, in *Options, opts ...grpc.CallOption) (EventReadAPI_ListClient, error) {
+	stream, err := c.cc.NewStream(ctx, &_EventReadAPI_serviceDesc.Streams[0], "/data.EventReadAPI/List", opts...)
+	if err != nil {
+		return nil, err
+	}
+	x := &eventReadAPIListClient{stream}
+	if err := x.ClientStream.SendMsg(in); err != nil {
+		return nil, err
+	}
+	if err := x.ClientStream.CloseSend(); err != nil {
+		return nil, err
+	}
+	return x, nil
+}
+
+type EventReadAPI_ListClient interface {
+	Recv() (*Event, error)
+	grpc.ClientStream
+}
+
+type eventReadAPIListClient struct {
+	grpc.ClientStream
+}
+
+func (x *eventReadAPIListClient) Recv() (*Event, error) {
+	m := new(Event)
+	if err := x.ClientStream.RecvMsg(m); err != nil {
+		return nil, err
+	}
+	return m, nil
+}
+
+func (c *eventReadAPIClient) Get(ctx context.Context, in *Options, opts ...grpc.CallOption) (*Event, error) {
+	out := new(Event)
+	err := c.cc.Invoke(ctx, "/data.EventReadAPI/Get", in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+// EventReadAPIServer is the server API for EventReadAPI service.
+type EventReadAPIServer interface {
+	List(*Options, EventReadAPI_ListServer) error
+	Get(context.Context, *Options) (*Event, error)
+}
+
+// UnimplementedEventReadAPIServer can be embedded to have forward compatible implementations.
+type UnimplementedEventReadAPIServer struct {
+}
+
+func (*UnimplementedEventReadAPIServer) List(req *Options, srv EventReadAPI_ListServer) error {
+	return status.Errorf(codes.Unimplemented, "method List not implemented")
+}
+func (*UnimplementedEventReadAPIServer) Get(ctx context.Context, req *Options) (*Event, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method Get not implemented")
+}
+
+func RegisterEventReadAPIServer(s *grpc.Server, srv EventReadAPIServer) {
+	s.RegisterService(&_EventReadAPI_serviceDesc, srv)
+}
+
+func _EventReadAPI_List_Handler(srv interface{}, stream grpc.ServerStream) error {
+	m := new(Options)
+	if err := stream.RecvMsg(m); err != nil {
+		return err
+	}
+	return srv.(EventReadAPIServer).List(m, &eventReadAPIListServer{stream})
+}
+
+type EventReadAPI_ListServer interface {
+	Send(*Event) error
+	grpc.ServerStream
+}
+
+type eventReadAPIListServer struct {
+	grpc.ServerStream
+}
+
+func (x *eventReadAPIListServer) Send(m *Event) error {
+	return x.ServerStream.SendMsg(m)
+}
+
+func _EventReadAPI_Get_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(Options)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(EventReadAPIServer).Get(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: "/data.EventReadAPI/Get",
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(EventReadAPIServer).Get(ctx, req.(*Options))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+var _EventReadAPI_serviceDesc = grpc.ServiceDesc{
+	ServiceName: "data.EventReadAPI",
+	HandlerType: (*EventReadAPIServer)(nil),
+	Methods: []grpc.MethodDesc{
 		{
 			MethodName: "Get",
-			Handler:    _EventAPI_Get_Handler,
+			Handler:    _EventReadAPI_Get_Handler,
 		},
 	},
 	Streams: []grpc.StreamDesc{
 		{
 			StreamName:    "List",
-			Handler:       _EventAPI_List_Handler,
+			Handler:       _EventReadAPI_List_Handler,
 			ServerStreams: true,
 		},
 	},
+	Metadata: "event.proto",
+}
+
+// EventWriteAPIClient is the client API for EventWriteAPI service.
+//
+// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/google.golang.org/grpc#ClientConn.NewStream.
+type EventWriteAPIClient interface {
+	Record(ctx context.Context, in *Event, opts ...grpc.CallOption) (*Event, error)
+}
+
+type eventWriteAPIClient struct {
+	cc grpc.ClientConnInterface
+}
+
+func NewEventWriteAPIClient(cc grpc.ClientConnInterface) EventWriteAPIClient {
+	return &eventWriteAPIClient{cc}
+}
+
+func (c *eventWriteAPIClient) Record(ctx context.Context, in *Event, opts ...grpc.CallOption) (*Event, error) {
+	out := new(Event)
+	err := c.cc.Invoke(ctx, "/data.EventWriteAPI/Record", in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+// EventWriteAPIServer is the server API for EventWriteAPI service.
+type EventWriteAPIServer interface {
+	Record(context.Context, *Event) (*Event, error)
+}
+
+// UnimplementedEventWriteAPIServer can be embedded to have forward compatible implementations.
+type UnimplementedEventWriteAPIServer struct {
+}
+
+func (*UnimplementedEventWriteAPIServer) Record(ctx context.Context, req *Event) (*Event, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method Record not implemented")
+}
+
+func RegisterEventWriteAPIServer(s *grpc.Server, srv EventWriteAPIServer) {
+	s.RegisterService(&_EventWriteAPI_serviceDesc, srv)
+}
+
+func _EventWriteAPI_Record_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(Event)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(EventWriteAPIServer).Record(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: "/data.EventWriteAPI/Record",
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(EventWriteAPIServer).Record(ctx, req.(*Event))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+var _EventWriteAPI_serviceDesc = grpc.ServiceDesc{
+	ServiceName: "data.EventWriteAPI",
+	HandlerType: (*EventWriteAPIServer)(nil),
+	Methods: []grpc.MethodDesc{
+		{
+			MethodName: "Record",
+			Handler:    _EventWriteAPI_Record_Handler,
+		},
+	},
+	Streams:  []grpc.StreamDesc{},
 	Metadata: "event.proto",
 }
